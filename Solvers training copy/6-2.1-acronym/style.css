@@ -1,0 +1,150 @@
+*{
+    font-family: Arial;
+
+}
+
+body{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: gainsboro;
+   
+}
+
+.container {
+    display: grid;
+    border: 3px black solid;
+    background-color: white;
+    gap: 10px;
+    height: 97vh;
+    aspect-ratio: 14/9;
+    grid-template: repeat(14,1fr)/ repeat(8,1fr);
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.header {
+    grid-area: 1 / 1 / 3 / 9;
+    background-color: rgba(174, 108, 222, 0.436) ;
+    display: grid;
+    grid-template: repeat(2,1fr)/repeat(4,1fr);
+    background-image: linear-gradient(rgb(111, 59, 189), rgba(174, 108, 222, 0.436));
+    justify-items: center;
+    align-items:center;
+
+    padding-left: 1%;
+    padding-right: 2% ;
+    margin-bottom: 2.7%;
+    border-end-end-radius: 2em ;
+    border-end-start-radius: 2em;
+    position: relative;
+    border-bottom: 2px black solid;
+    box-shadow: 0px 6px 4px gray;
+    overflow: hidden;
+
+}
+
+.logo {
+    grid-area: 1 / 1 / end / span 1;
+    justify-content: start;
+    position: absolute;
+}
+
+.image {
+    width: 18%;
+    border-radius: 50%; 
+}
+
+.title {
+    grid-area: 1 / 2 / end /span 2;
+    font-size: xx-large;
+    align-self: center;
+    font-weight: bold;
+
+}
+
+.logout {
+    grid-area: 1 / 4 /end /span 1;
+    font-size: large;
+    justify-self:right;
+    color: black;
+      
+}
+
+.logout a{
+    color: black;
+}
+
+
+iframe {
+    grid-area: 2 / 2 / 11 / 8;
+    margin-top: 6%;
+}
+
+
+.video {
+    grid-area: 2 / 2 / 11 / 8;
+    margin-top: 3%;  
+    display: flex;
+    justify-content: center;
+}
+
+.vid {
+    border: grey 3px solid;
+}
+
+.buttons{
+    grid-area: 12 / 2 / 13 / 8 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+
+   
+.button {
+    background-color: rgb(172, 170, 170);
+    border-radius: 10%;
+    height:175%;
+}
+
+.box {
+    display: flex;
+}
+
+.footer {
+    grid-area: 14/ 1 / 15 / 9;
+    background-color: rgba(174, 108, 222, 0.436);
+    align-content: center;
+    padding-left: 2%;
+    background-image: linear-gradient(rgba(174, 108, 222, 0.436), rgb(111, 59, 189) );
+    border-top: 2px black solid;
+}
+
+
+
+
+/*dddddddddd*/
+
+.image:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px black ;
+
+}
+
+.button:hover {
+    background-color:  rgba(222, 228, 70, 0.8);
+    transform: scale(1.2);
+}
+
+
+.button:active {
+    background-color: purple;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.logout a:hover {
+    color: white;
+}
+   
